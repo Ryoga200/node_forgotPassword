@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ログインサイト</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>ログイン画面です</h1>
+    <%if (data){%>
+      <%='メールアドレスまたはパスワードがちがいます'%>
+   <% }%>
+    <form method="POST" action="/login">
+        <p>メールアドレス</p>
+        <input name="email">
+        <p>パスワード</p>
+        <input name="password">
+        <br>
+        <input type="submit" value="認証">
+    </form>
+    <a href="forgotten">パスワードを忘れたかたはこちら</a><br>
+    <a href="signup">会員登録していないかたはこちら</a>
+  </body>
+</html>

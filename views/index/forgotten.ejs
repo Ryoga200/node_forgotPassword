@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ログインサイト</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>パスワードを忘れたかたへ</h1>
+    <p>再度メールをお送りいたします。</p>
+    <form method="POST" action="/forgotten">
+        <p>メールアドレス</p>
+        <input name="email">
+        <input type="submit" value="送信">
+    </form>
+    <a href="/login">ログインページに戻る</a>
+  </body>
+</html>
