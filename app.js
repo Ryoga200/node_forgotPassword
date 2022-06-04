@@ -6,7 +6,11 @@ var logger = require('morgan');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bodyParser = require('body-parser');
-
+var mime = {
+  ".html": "text/html",
+  ".css":  "text/css"
+  // 読み取りたいMIMEタイプはここに追記
+};
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
